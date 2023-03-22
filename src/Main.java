@@ -1,3 +1,5 @@
+import presenter.Presenter;
+
 /**
  * Создать в формате MVP проект блокнот.
  * <p>
@@ -16,6 +18,7 @@
 
 public class Main {
     public static void main(String[] args) {
-
+        Presenter notes = new Presenter();
+        notes.program();
     }
 }
