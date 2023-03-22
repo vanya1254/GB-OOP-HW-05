@@ -14,34 +14,34 @@ public class View {
     }
 
     public String showMenu() {
-        System.out.println("Выберете пункт:");
-        System.out.println("1 - добавить заметку,\n2 - показать заметку,\n3 - показать все заметки,\n4 - удалить заметку,\n5 - закрыть программу.");
+        System.out.println("\nВыберете пункт:");
+        System.out.println("\t1 - добавить заметку,\n\t2 - показать заметку,\n\t3 - показать все заметки,\n\t4 - удалить заметку,\n\t5 - закрыть программу.\n");
         String point = sc.nextLine();
         return point;
     }
 
     public String scanPoint() {
-        System.out.println("Введите заметку:");
+        System.out.println("\nВведите заметку:");
         String note = sc.nextLine();
         return note;
     }
 
     public String scanSubPoint() {
-        System.out.println("Выберете пункт:");
-        System.out.println("1 - выбрать заметку по индексу,\n2 - выбрать заметку по совпадению строки.");
+        System.out.println("\nВыберете пункт:");
+        System.out.println("\t1 - выбрать заметку по индексу,\n\t2 - выбрать заметку по совпадению строки.\n");
         String point = sc.nextLine();
 
         return point;
     }
 
     public int scan1SubPoint() {
-        System.out.println("Введите индекс:");
+        System.out.println("\nВведите индекс:");
         int index = sc.nextInt();
         return index;
     }
 
     public String scan2SubPoint() {
-        System.out.println("Введите строку:");
+        System.out.println("\nВведите строку:");
         String str = sc.nextLine();
         return str;
     }
@@ -55,8 +55,7 @@ public class View {
     }
 
     public void showBye() {
-        System.out.println("Пока!");
-        System.out.println();
+        System.out.println("\nПока!\n");
         System.out.println("p.s. программа закрыта");
         sc.close();
     }

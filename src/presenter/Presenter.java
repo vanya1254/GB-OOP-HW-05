@@ -21,7 +21,7 @@ public class Presenter {
                     break;
                 case ("2"):
                     if (view.scanSubPoint().equals("1"))
-                        view.show(model.getNote(view.scan1SubPoint()));
+                        view.show(model.getNote(view.scan1SubPoint()));//при выполнении повторно срабатывает switch()
                     else view.show(model.getNote(view.scan2SubPoint()));
                     break;
                 case ("3"):
@@ -29,7 +29,7 @@ public class Presenter {
                     break;
                 case ("4"):
                     if (view.scanSubPoint().equals("1"))
-                        model.removeNoteAt(view.scan1SubPoint());
+                        model.removeNoteAt(view.scan1SubPoint());//почему не пойму
                     else model.removeNote(view.scan2SubPoint());
                     break;
                 case ("5"):
